@@ -1,0 +1,9 @@
+#Consultar serviço remoto
+Invoke-Command -ComputerName dp.ufcvirtual.local { Get-Service bits } -HideComputerName
+
+#Verificando as Propriedades de um comando
+Invoke-Command -ComputerName dp.ufcvirtual.local { Get-Service bits } -HideComputerName
+
+#Teste de porta em servidor remoto
+Test-NetConnection -ComputerName dp.ufcvirtual.local -Port 135
+
